@@ -1,4 +1,4 @@
-openai
 spotipy
 pandas
 scikit-learn
+openai
