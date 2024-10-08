@@ -1,10 +1,11 @@
 from openai import OpenAI
 client = OpenAI()
 
-response = client.images.generate(
-    prompt="A cute baby sea otter",
-    n=2,
-    size="1024x1024"
+response = client.images.edit(
+  model="dall-e-3",
+  prompt="A sunlit indoor lounge area with a pool containing a flamingo",
+  n=1,
+  size="1024x1024"
 )
 
-print(response.data[0].url)
+image_url = response.data[0].url
