@@ -1,3 +1,4 @@
 .venv
 EchoScapes.code-workspace
 .env
+.cache
